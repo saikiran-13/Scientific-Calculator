@@ -1,0 +1,148 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Placing the calculator and adding shadow effect */
+.calc {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    background-color: rgba(240, 240, 240, 0.8);
+    z-index: -1;
+}
+
+/* input screen */
+.input {
+    display: flex;
+    max-width: 100%;
+    height: 35px;
+    text-align: right;
+    margin-top: 0.8rem;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: x-large;
+    color: gray !important;
+    margin-right: 15px;
+    background-color: rgba(240, 240, 240, 0.3);
+}
+
+/* output screen */
+.output {
+    display: flex;
+    max-width: 100%;
+    height: 40px;
+    text-align: right;
+    font-weight: 600;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: xx-large;
+
+    margin-right: 15px;
+    background-color: rgba(240, 240, 240, 0.3);
+
+}
+
+/* buttons */
+button {
+    width: 65px;
+    height: 40px;
+    border: 0.1px;
+    margin: 1.5px 0.5px;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    border-radius: 3px;
+    background-color: rgba(250, 250, 250, 0.9);
+
+}
+
+/* Button click */
+button:active {
+    border: solid;
+}
+
+/* Numbers,sign change,dot */
+.num,
+.oprev,
+.dot {
+    font-size: large;
+    font-weight: 700;
+    background-color: white;
+}
+
+.thirdrow button,
+.secondrow button,
+.pie {
+    font-weight: 700;
+}
+
+.mr,
+.mc {
+    opacity: 0.3;
+}
+
+.equal {
+    background-color: rgb(10, 160, 255);
+}
+
+/* Back button */
+.close {
+    align-items: center;
+    padding-top: 0.1rem;
+}
+
+/*Trignometry and Functions container*/
+.fourthrow {
+    display: flex;
+    margin: 2px 0px;
+    background-color: rgba(240, 240, 240, 0.3);
+}
+
+.trignometry {
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+
+}
+
+.trignometry img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin-right: 0.4rem;
+}
+
+.functions {
+    margin-left: 0.6rem;
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+.functions img {
+    margin-right: 0.4rem;
+}

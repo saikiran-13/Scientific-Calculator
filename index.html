@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Caluculator</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- creating input and output screen -->
+  <div class="calc">
+    <div class="firstrow">
+      <div class="input"></div>
+      <div class="output"></div>
+    </div>
+
+    <!-- Deg and F-E button -->
+    <div class="secondrow">
+      <button class="deg_btn" name="deg_rad" value="DEG">DEG</button>
+      <button class="f-e" name="fixedExpo">F-E</button>
+    </div>
+
+    <!-- Memory Operations -->
+    <div class="thirdrow ">
+      <button class="mc" name="mem" value="clean">MC</button>
+      <button class="mr" name="mem" value="read">MR</button>
+      <button class="mp" name="mem" value="add">M+</button>
+      <button class="msu" name="mem" value="minus">M-</button>
+      <button class="ms" name="mem" value="store">MS</button>
+    </div>
+
+    <!-- Trignometry and Functions -->
+    <div class="fourthrow">
+      <div class="trignometry">
+        <img src="./pythagoras.png" width="20px" height="20px">
+        <select class="Trignometry" style="border:none">
+          <option class="Trig" selected="false">Trignometry</option>
+          <option value="Math.sin(" name="sin(">sin</option>
+          <option value="Math.cos(" name="cos(">cos</option>
+          <option value="Math.tan(" name="tan(">tan</option>
+          <option value="Math.cot(" name="cot(">cot</option>
+          <option value="Math.sec(" name="cosec(">cosec</option>
+          <option value="Math.cosec(=" name="sec(">sec</option>
+        </select>
+      </div>
+      <div class="functions">
+        <img src="./clipart697562.png" width="20px" height="20px">
+        <select class="function" style="border:none">
+          <option class="fun" selected="false">Function</option>
+          <option value="Math.random(" name="2nd">rand</option>
+          <option value="Math.floor(" name="floor">floor</option>
+          <option value="Math.ceil(" name="ceil">ceil</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div class="fifthrow">
+      <button class="2nd" name="second">2<sup>nd</sup></button>
+      <button class="pi" name="Math.PI" value=&pi;>&pi;</button>
+      <button class="e" name="Math.E" value="e">e</button>
+      <button class="c" name="clear" value="">C</button>
+      <button class="close" name="cls"><img src="./backspace_FILL0_wght400_GRAD0_opsz48.png" width="16rem"
+          height="16rem"></button>
+
+    </div>
+    <div class="sixthrow">
+      <button class="square" name="**2" value="^2" type="tog">x<sup>2</sup></button>
+      <button class="inverse" name="1/(" value="1/(">1/x</button>
+      <button class="abs" name="Math.abs(" value="abs(">|x|</button>
+      <button class="exp" name="2.7182**(" value="exp(">exp</button>
+      <button class="modulo" name="%" value="%">mod</button>
+
+    </div>
+    <div class="seventhrow">
+      <button class="root" value=&radic;( name="Math.sqrt(" type="tog"><span>&radic;</span>x</button>
+      <button class="openbrac" name="(" value="(">(</button>
+      <button class="closebrac" name=")" value=")">)</button>
+      <button class="fact" name="!" value="!">n!</button>
+      <button class="divi" name="/" value="/">&divide;</button>
+
+    </div>
+    <div class="eightrow">
+      <button class="xy" name="**" value="^" type="tog">x<sup>y</sup></button>
+      <button class="num" name="7" value="7">7</button>
+      <button class="num" name="8" value="8">8</button>
+      <button class="num" name="9" value="9">9</button>
+      <button class="mul" name="*" value="x">&times;</button>
+
+
+    </div>
+    <div class="ninthrow">
+      <button class="tenx" name="10**" value="10^" type="tog">10<sup>x</sup></button>
+      <button class="num" name="4" value="4">4</button>
+      <button class="num" name="5" value="5">5</button>
+      <button class="num" name="6" value="6">6</button>
+      <button class="sub" name="-" value="-">&minus;</button>
+
+    </div>
+    <div class="tenthrow">
+      <button class="log" name="(1/2.30258509)*Math.log(" value="log(">log</button>
+      <button class="num" name="1" value="1">1</button>
+      <button class="num" name="2" value="2">2</button>
+      <button class="num" name="3" value="3">3</button>
+      <button class="add" name="+" value="+">&plus;</button>
+
+    </div>
+    <div class="eleventhrow">
+      <button class="ln" name="Math.log(" value="ln(">ln</button>
+      <button class="oprev" name="plusorminus"><sup>+</sup>/<sub>-</sub></button>
+      <button class="num" name="0" value="0">0</button>
+      <button class="dot" name="." value=".">.</button>
+      <button class="equal" name="eq" value="=">&equals;</button>
+
+    </div>
+  </div>
+</body>
