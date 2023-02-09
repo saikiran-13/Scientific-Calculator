@@ -306,9 +306,9 @@ for (let button of buttons) {
             if (flag) {
                 let name = button.getAttribute("name")
                 let value = button.getAttribute("value")
-                temp_cal.push(value)
-                screen_cal.push(name)
-                inputdata.textContent = temp_cal.join("")
+                temp_cal.push(name)
+                screen_cal.push(value)
+                inputdata.textContent = screen_cal.join("")
             }
 
             //when 2nd button is clicked and functions gets changed 
